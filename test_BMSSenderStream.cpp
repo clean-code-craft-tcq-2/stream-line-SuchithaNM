@@ -5,11 +5,11 @@
 #include "BMS_Sender/BMS_SenderStream.h"
 
 
-/*TEST_CASE("Testcase to check input data from file") 
+TEST_CASE("Testcase to check input data from file") 
 {
-   BMS_inputtype inputvaluefetch= FileInputType;
+   BMS_inputtype inputvaluefetch = FileInputType;
    REQUIRE(inputvalue (inputvaluefetch) == E_OK);
-}*/
+}
 
 /*TEST_CASE("Testcase to check if the console print is happening periodically") 
 {
