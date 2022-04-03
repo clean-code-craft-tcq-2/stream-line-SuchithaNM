@@ -5,17 +5,35 @@
 #include "BMS_Sender/BMS_SenderStream.h"
 
 
-TEST_CASE("Testcase to check input data from file") 
+SCENARIO("Get the  input data StateofCharge and Temp value from file")
 {
-   BMS_inputtype inputvaluefetch = FileInputType;
-   REQUIRE(inputvalue (inputvaluefetch) == E_OK);
+    GIVEN("Read input from the SenderInputFile.txt")
+    {
+        WHEN("FileInputType contains Sender Input data values")
+        {
+            BMS_inputtype inputvaluefetch = FileInputType;
+            THEN("check all the input values from file")
+            {
+               REQUIRE(inputvalue (inputvaluefetch) == E_OK);
+            }
+        }
+    }
 }
 
-/*TEST_CASE("Testcase to check if the console print is happening periodically") 
+
+SCENARIO("Check the input data values print on console")
 {
- 
-    BMS_inputtype inputvaluefetch = FileInputType;
-    BMS_outputtype outputvaluefetch = printtoconsole;
-    REQUIRE(inputvalue (inputvaluefetch) == E_OK);
-    REQUIRE(outputvalue (outputvaluefetch) == E_OK);
-}*/
+    GIVEN("print output on console")
+    {
+        WHEN("printtoconsole contains Sender output data values")
+        {
+            BMS_inputtype inputvaluefetch = FileInputType;
+            BMS_outputtype outputvaluefetch = printtoconsole;
+            THEN("check all the onput data values priniting on console")
+            {
+               REQUIRE(inputvalue (inputvaluefetch) == E_OK);
+               REQUIRE(outputvalue (outputvaluefetch) == E_OK);
+            }
+        }
+    }
+}
