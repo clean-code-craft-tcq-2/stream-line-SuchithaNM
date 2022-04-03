@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#define BMS_DATA 50
 
 typedef enum
 {
