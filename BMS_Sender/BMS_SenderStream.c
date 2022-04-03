@@ -12,7 +12,7 @@ Bms_result dataread(float Temperature[],float StateOfCharge[])
     float TemperatureTemp,StateOfChargeVal;
     Bms_result Status= E_NOT_OK;
     int senderInputValue = 0;
-    FILE * file= fopen("./Sender/SenderInputFile.txt","r");  
+    FILE * file= fopen("./BMS_Sender/SenderInputFile.txt","r");  
     if (file) {
         for(int i=0;fscanf(file, "%f\t\t%f\n", &TemperatureTemp,&StateOfChargeVal)!=EOF ;i++)
         {
