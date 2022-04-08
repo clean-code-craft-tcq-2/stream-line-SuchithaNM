@@ -91,4 +91,7 @@ Adapted the yml files from one of my previous workflow folders.
     Reading BMS parameters StateOfCharge and temperature values from SenderInputFile.txt
     Validating whnether BMS data reading from the input file
     Checking Whether BMS data values successfully print on console
+## Design 
+
+![image](https://user-images.githubusercontent.com/90901005/162369057-f52cc835-74d0-4168-984b-d15ecb05fb8f.png)
 
