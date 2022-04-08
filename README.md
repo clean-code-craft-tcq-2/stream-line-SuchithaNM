@@ -75,3 +75,23 @@ This section lists the minimum functionality of the Sender and Receiver.
 ## Quality Parameters
 
 Setup the quality parameters of your project (duplication, complexity, coverage, warnings) using GitHub workflow yml files.
+
+# Tasks
+
+Establish quality parameters:
+
+    Maximum complexity (CCN) per function is 3
+    How many lines of duplicate code will you tolerate? the number of lines is 3
+    Ensure 100% line and branch coverage at every step. Included the coverage yml in the workflows.
+
+Adapted the yml files from one of my previous workflow folders.
+
+## Approach
+
+    Reading BMS parameters StateOfCharge and temperature values from SenderInputFile.txt
+    Validating whnether BMS data reading from the input file
+    Checking Whether BMS data values successfully print on console
+## Design 
+
+![image](https://user-images.githubusercontent.com/90901005/162369057-f52cc835-74d0-4168-984b-d15ecb05fb8f.png)
+
